@@ -15,7 +15,7 @@ export function AddCategory({ onNewCategory }) {
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form className="form" onSubmit={onSubmit}>
       <input
         className="search-bar"
         type="text"
@@ -23,6 +23,9 @@ export function AddCategory({ onNewCategory }) {
         value={inputValue}
         onChange={onInputChange}
       />
+      <button className="btn-search" type="submit">
+        <img src="/assets/magnifying-glass-tilted-right.svg" alt="magnifying glass" />
+      </button>
     </form>
   )
 }

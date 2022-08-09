@@ -7,6 +7,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  box-sizing: border-box;
+}
 
  html {
   line-height: 1.15; /* 1 */
@@ -353,6 +356,7 @@ template {
 	--text-color: #808080;
   --bg-color2: #00000077;
   --bg-color3: #f3f3f333;
+  --bg-color4: #222222;
 }
 
 :root[data-color-theme=light] {
@@ -360,6 +364,7 @@ template {
   --text-color: #808080;
   --bg-color2: #ffffff77;
   --bg-color3: #8f8f8f33;
+  --bg-color4: #f9f9f9;
 }
 
 body {
@@ -379,10 +384,25 @@ body {
   font-size: 3rem;
   font-weight: 800;
   text-shadow: 2px 2px #000000;
+  margin-left: 4rem;
   margin-right: 4rem;
-  /* padding: 0 3rem; */
 }
 
+.form {
+  position: relative;
+}
+
+.btn-search {
+  top: 1px;
+  position: absolute;
+  right: -1px;
+  background-color: var(--bg-color4);
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  padding: 3px 15px 0;
+  cursor: pointer;
+}
 
 .search-bar {
   border-radius: 30px;
@@ -416,7 +436,6 @@ body {
   max-width: 1000px;
   gap: 1.5rem;
   margin-bottom: 5rem;
-  /* padding: 1rem; */
 }
 
 .card {
@@ -447,7 +466,6 @@ body {
   position: absolute;
   top: 0;
   right: .8rem;
-  /* margin-: rem; */
 }
 
 .theme--animation {

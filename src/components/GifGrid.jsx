@@ -1,5 +1,4 @@
 import { useFetchGifs } from '/src/hooks/useFetchGifs'
-import { GifItem } from './GifItem'
 import { Spinner } from '../helpers/spinners/Spinner'
 
 export function GifGrid({ category }) {
@@ -11,8 +10,8 @@ export function GifGrid({ category }) {
 		<>
 			<h2 className='subtitle'>{category}</h2>
 			<div className='card-grid'>
-				{images.map(imgs => (
-					<GifItem key={imgs.id} {...imgs} />
+				{images.map(({ id, url, title }) => (
+					<img key={id} className="card" src={url} alt={title} />
 				))}
 			</div>
 		</>

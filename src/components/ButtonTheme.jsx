@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { fadeInAnimation, getTheme, setTheme } from "../helpers/theme";
-import light from '../assets/light.svg'
-import dark from '../assets/dark.svg'
+import light from '../../assets/light.svg'
+import dark from '../../assets/dark.svg'
 
 export const ButtonTheme = () => {
   const [defaultTheme, setDefaultTheme] = useState(getTheme());
