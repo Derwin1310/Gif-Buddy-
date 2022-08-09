@@ -1,4 +1,5 @@
 import { useState } from "react"
+import magnifyingGlass from '/assets/magnifying-glass.svg'
 
 export function AddCategory({ onNewCategory }) {
 
@@ -24,7 +25,7 @@ export function AddCategory({ onNewCategory }) {
         onChange={onInputChange}
       />
       <button className="btn-search" type="submit">
-        <img src="/assets/magnifying-glass-tilted-right.svg" alt="magnifying glass" />
+        <img src={magnifyingGlass} alt="magnifying glass" />
       </button>
     </form>
   )

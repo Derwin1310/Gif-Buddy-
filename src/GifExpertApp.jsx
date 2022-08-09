@@ -1,8 +1,5 @@
 import { useState } from "react"
-import { ButtonTheme } from "./components/ButtonTheme"
-import { GifGrid } from "./components/GifGrid"
-import { AddCategory } from "/src/components/AddCategory"
-
+import { ButtonTheme, GifGrid, AddCategory } from "./components"
 
 export function GifExpertApp() {
 
